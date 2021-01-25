@@ -1,0 +1,35 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'Contacts'
+
+block page
+	include ../sections/_header-classic
+
+	section.section-md.bg-default
+		.container
+			h3.section-title
+				| contact
+				span  form
+			form.rd-form.rd-mailform(data-form-output='form-output-global', data-form-type='contact', method='post', action='bat/rd-mailform.php')
+				.row.row-30
+					.col-sm-6.col-lg-4
+						.form-wrap
+							input#contact-name.form-input(type='text', name='name', data-constraints='@Required')
+							label.form-label(for='contact-name') Your Name
+					.col-sm-6.col-lg-4
+						.form-wrap
+							input#contact-email.form-input(type='email', name='email', data-constraints='@Email @Required')
+							label.form-label(for='contact-email') E-mail
+					.col-md-12.col-lg-4
+						.form-wrap
+							input#contact-phone.form-input(type='text', name='phone', data-constraints='@Numeric')
+							label.form-label(for='contact-phone') Phone
+					.col-12
+						.form-wrap
+							label.form-label(for='contact-message') Your Message
+							textarea#contact-message.form-input(name='message', data-constraints='@Required')
+					.col-12
+						button.btn(type='submit') Submit
+
+	include ../sections/_footer-classic

@@ -1,0 +1,288 @@
+/** @section Lists */
+
+// Vertical list
+.list {
+	> li + li {
+		margin-top: 10px;
+	}
+}
+
+.list-xs > li + li {
+	margin-top: 5px;
+}
+
+.list-sm > li + li {
+	margin-top: 10px;
+}
+
+.list-md > li + li {
+	margin-top: 18px;
+}
+
+.list-lg > li + li {
+	margin-top: 25px;
+}
+
+.list-xl > li + li {
+	margin-top: 30px;
+}
+
+@include media-breakpoint-up(md) {
+	.list-xl > li + li {
+		margin-top: 60px;
+	}
+}
+
+
+// List inline
+.list-inline {
+	> li {
+		display: inline-block;
+	}
+}
+
+html {
+	.list-inline-md {
+		@include spacing(20px, 8px);
+
+		@include media-breakpoint-up(lg) {
+			@include spacingX(30px);
+		}
+	}
+}
+
+
+// List terms
+.term-list {
+	* + &{
+		margin-top: 22px;
+	}
+	dt {
+		color: $color2;
+		font-size: 22px;
+		font-weight: 300;
+		letter-spacing: -1px;
+		line-height: 32px;
+		margin-bottom: 7px;
+		text-transform: uppercase;
+		@include media-breakpoint-up(xl){
+			font-size: 30px;
+		}
+	}
+	dd {
+		line-height: 26px;
+		margin-bottom: 16px;
+		&:last-child {
+			margin: 0 0 29px 0;
+		}
+		a {
+			color: $color5;
+			&:hover {
+				color: $color1;
+			}
+		}
+	}
+}
+
+* + .list-terms {
+	margin-top: 25px;
+}
+
+
+// Index list
+.index-list {
+	counter-reset: li;
+
+	> li {
+		.list-index-counter {
+			&:before {
+				content: counter(li, decimal-leading-zero);
+				counter-increment: li;
+			}
+		}
+	}
+}
+
+
+// Marked list
+.list-marked {
+	text-align: left;
+
+	> li {
+		position: relative;
+		padding-left: 25px;
+
+		&::before {
+			position: absolute;
+			display: inline-block;
+			left: 0;
+			top: 1px;
+			min-width: 25px;
+			content: '\f105';
+			font: 400 14px/24px 'FontAwesome';
+			color: $gray-400;
+		}
+	}
+
+	> li + li {
+		margin-top: 4px;
+	}
+}
+
+* + .list-marked {
+	margin-top: 15px;
+}
+
+p + .list-marked {
+	margin-top: 10px;
+}
+
+
+// Ordered List
+.list-ordered {
+	counter-reset: li;
+	text-align: left;
+
+	> li {
+		position: relative;
+		padding-left: 25px;
+
+		&:before {
+			position: absolute;
+			content: counter(li, decimal) '.';
+			counter-increment: li;
+			top: 0;
+			left: 0;
+			display: inline-block;
+			width: 15px;
+			color: $gray-400;
+		}
+	}
+
+	> li + li {
+		margin-top: 10px;
+	}
+}
+
+* + .list-ordered {
+	margin-top: 15px;
+}
+
+
+.marked-list li{
+
+	border-bottom: 1px solid #dadbdc;
+
+	a{
+		position: relative;
+		margin: 1px 0;
+		text-transform: uppercase;
+		color: #C8B568;
+		padding: 11px 0 10px 46px;
+		display: block;
+		font-size: 19px;
+		font-weight: 500;
+		&:before{
+			content: '\f105';
+			position: absolute;
+			left: 20px;
+			top: 14px;
+			font: 400 14px 'FontAwesome';
+			line-height: 1;
+			font-size: 24px;
+			color: #1e2540;
+			transition: $transition-base;
+		}
+		&:hover{
+			text-decoration: none;
+			background: #C8B568;
+			color: #fff;
+			&:before{
+				color: inherit;
+				transition: $transition-base;
+			}
+		}
+	}
+}
+
+
+.contact-list{
+	color: $white;
+	li{
+
+		.title + *{
+			margin-left: 5px;
+		}
+		.title{
+			font-size: 17px;
+			text-transform: uppercase;
+			color: $color1;
+		}
+	}
+}
+
+
+.index-list {
+	counter-reset: li;
+
+	> li {
+		.list-index-counter {
+			&:before {
+				content: counter(li, decimal-leading-zero);
+				counter-increment: li;
+			}
+		}
+	}
+}
+
+.index-list {
+	counter-reset: li;
+	li {
+		box-sizing: border-box;
+		position: relative;
+		overflow: hidden;
+		p {
+			margin-top: 10px;
+		}
+		&:before {
+			content: counter(li, decimal) '.';
+			padding: 2px 0 0 7px;
+			background: $color1;
+			box-sizing: border-box;
+			color: #fff;
+			font-size: 55px;
+			font-weight: 900;
+			height: 70px;
+			float: left;
+			width: 70px;
+			margin-right: 21px;
+			display: block;
+			border-radius: 50%;
+			counter-increment: li;
+			line-height: 1;
+			text-align: center;
+		}
+		h4 {
+			color: $color2;
+			position: relative;
+			text-transform: uppercase;
+			top: 2px;
+			line-height: 24px;
+			a:hover {
+				color: $footer-bg;
+			}
+		}
+	}
+	li + li {
+		margin-top: 20px;
+		@include media-breakpoint-up(xl){
+			margin-top: 40px;
+		}
+	}
+}
+
+.index-list_cnt {
+	left: 9px;
+	overflow: hidden;
+	position: relative;
+}

@@ -1,0 +1,95 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'Project Gallery'
+
+block page
+	include ../sections/_header-classic
+
+	section.section-md.bg-default
+		.container
+			h3.section-title
+				| Project
+				span  Gallery
+			.row.row-30
+				.col-sm-6.col-lg-4.wow.fadeInLeft
+					.thumbnail-simple
+						img(alt='', src='images/page-3_img01.jpg')
+						.thumbnail-simple__caption
+							h4: a(href='#') Project #1
+							p Abactor, species, et burgus. Ubi est emeritis sensorem? Cum index nocere, omnes cedriumes demitto ferox.
+				.col-sm-6.col-lg-4
+					.thumbnail-simple
+						img(alt='', src='images/page-3_img02.jpg')
+						.thumbnail-simple__caption
+							h4: a(href='#') Project #2
+							p Toruss ridetis in aetheres! Cum ignigena ire, omnes rectores pugna camerarius, bi-color medicinaes.
+				.col-sm-6.col-lg-4.wow.fadeInRight
+					.thumbnail-simple
+						img(alt='', src='images/page-3_img03.jpg')
+						.thumbnail-simple__caption
+							h4: a(href='#') Project #3
+							p Valebats peregrinatione, tanquam albus bromium. Abactors observare in albus hafnia! Cum parma credere.
+				.col-sm-6.col-lg-4.wow.fadeInLeft
+					.thumbnail-simple
+						img(alt='', src='images/page-3_img04.jpg')
+						.thumbnail-simple__caption
+							h4: a(href='#') Project #4
+							p Germanus plasmators ducunt ad candidatus. Cum ignigena cadunt, omnes triticumes vitare peritus.
+				.col-sm-6.col-lg-4
+					.thumbnail-simple
+						img(alt='', src='images/page-3_img05.jpg')
+						.thumbnail-simple__caption
+							h4: a(href='#') Project #5
+							p Nunquam acquirere nuclear vexatum iacere. Fidelis, fatalis devirginatos nunquam manifestum de emeritis.
+				.col-sm-6.col-lg-4.wow.fadeInRight
+					.thumbnail-simple
+						img(alt='', src='images/page-3_img06.jpg')
+						.thumbnail-simple__caption
+							h4: a(href='#') Project #6
+							p Nunquam consumere mens. Cum luba tolerare, omnes abaculuses demitto lotus, placidus equisoes.
+				.col-sm-6.col-lg-4.wow.fadeInLeft
+					.thumbnail-simple
+						img(alt='', src='images/page-3_img07.jpg')
+						.thumbnail-simple__caption
+							h4: a(href='#') Project #7
+							p Teres valebat patienter demittos nuclear vexatum iacere est. Secundus, domesticus aonidess sensim pugna.
+				.col-sm-6.col-lg-4
+					.thumbnail-simple
+						img(alt='', src='images/page-3_img08.jpg')
+						.thumbnail-simple__caption
+							h4: a(href='#') Project #8
+							p Ecce. Mineralis assimilants, tanquam camerarius historia. Primus, azureus eleatess saepe promissio de barbatus.
+				.col-sm-6.col-lg-4.wow.fadeInRight
+					.thumbnail-simple
+						img(alt='', src='images/page-3_img09.jpg')
+						.thumbnail-simple__caption
+							h4: a(href='#') Project #9
+							p Domina brevis zeta est. Ridetis una ducunt ad peritus hydra. Bromiums sunt armariums de noster absolutio. .
+
+
+
+
+
+	+parallax({
+		img: 'parallax5',
+		innerClass: 'section-sm context-dark text-center'
+	})
+		.container
+			.row.row-30
+				.col-md-6
+					.caption1.caption4
+						h2
+							span presentation
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis nibh ac lectus bibendum, in aliquet tortor luctus. Morbi ut libero eget sem gravida condimentum. Maecenas semper sagittis purus, senectus et netus et malesuada fames ac turpis egestas. Morbi posuere diam auctor tellus dictum interdum. Donec faucibus a felis ut porta. Nulla facilisi. Donec diam quam, aliquet in commodo a.
+						a.fa.fa-angle-right(href='#')
+				.col-md-6
+					.caption1.caption4
+						h2
+							span commerce
+						p Nulla mollis nibh ac lectus bibendum, in aliquet tortor luctus. Morbi ut libero eget sem gravida condimentum. Maecenas semper sagittis purus, senectus et netus et malesuada fames ac turpis egestas. Morbi posuere diam auctor eros sit amet, egestas massa. Mauris hendrerit ipsum sed efficitur hendrerit congue. Nullam rhoncus orci vitae maximus varius. Aliquam tempor neque arcu, lobortis preti.
+						a.fa.fa-angle-right(href='#')
+
+
+
+	include ../sections/_footer-classic

@@ -1,0 +1,199 @@
+extends ../_skeleton
+
+block page
+	include ../sections/_header-classic
+
+	//swiper
+	section.section.swiper-container.swiper-slider.swiper-slider-1( data-swiper!={
+		autoplay: {
+			delay: 4567
+		},
+		effect: 'fade'
+	})
+		.swiper-wrapper.text-center
+			.swiper-slide.context-dark(data-slide-bg='images/slide1.jpg')
+				.swiper-slide-caption.section-sm
+					.container
+						.row
+							.col-lg-7
+								.swiper_caption(data-caption-animate='fadeIn' data-caption-delay='100')
+									h2 A complete line of
+									span products is available
+									p Welcome to the number 1 company in the industry! Looking for some helpful advice? Go no further; you&apos;ve come to the right place. We are professional, experienced and dedicated to your satisfaction.
+									a.fa.fa-angle-right(href='#')
+			.swiper-slide.context-dark(data-slide-bg='images/slide2.jpg')
+				.swiper-slide-caption.section-md
+					.container
+						.row
+							.col-lg-7
+								.swiper_caption.caption-bg-2(data-caption-animate='fadeIn' data-caption-delay='100')
+									h2 Providing premium
+									span products of exceptional value
+									p We are committed to the highest quality, reliability, responsibility, continuous improvement.
+									a.fa.fa-angle-right(href='#')
+			.swiper-slide.context-dark(data-slide-bg='images/slide3.jpg')
+				.swiper-slide-caption.section-md
+					.container
+						.row
+							.col-lg-7
+								.swiper_caption.caption-bg-3(data-caption-animate='fadeIn' data-caption-delay='100')
+									h2 A wide range of
+									span high quality structural steel projects
+									p Our company can boast the reputation of the trusted partner known worldwide.
+									a.fa.fa-angle-right(href='#')
+		//Swiper Pagination
+		.swiper-pagination
+
+	//Services
+	section.section.section-md.bg-default
+		.container
+			.row.row-30
+				.col-lg-6.wow.fadeInLeft
+					.img-box
+						span
+						img(src='images/page-1_img01.jpg', alt='')
+						.caption.context-dark
+							h2 DUCTING
+							p Our custom fabricated stainless steel ducting products are highly reliable and distributed across the world.
+						a.fa.fa-angle-right(href='#')
+				.col-lg-6.wow.fadeInRight
+					.img-box
+						span
+						img(src='images/page-1_img02.jpg', alt='')
+						.caption.context-dark
+							h2 STACKS
+							p Our stacks are designed to maintain air quality emissions in compliance with modern requirements for your facility.
+						a.fa.fa-angle-right(href='#')
+				.col-lg-6.wow.fadeInLeft
+					.img-box
+						span
+						img(src='images/page-1_img03.jpg', alt='')
+						.caption.context-dark
+							h2 tanks
+							p We specialize in the fabrication of custom industrial tanks of all kinds, including stainless steel tanks.
+						a.fa.fa-angle-right(href='#')
+				.col-lg-6.wow.fadeInRight
+					.img-box
+						span
+						img(src='images/page-1_img04.jpg', alt='')
+						.caption.context-dark
+							h2 STRUCTURAL
+							p Our primary business is providing design, fabrication, and erection of structural steel for commercial or industrial buildings, and bridges.
+						a.fa.fa-angle-right(href='#')
+
+
+
+	//We'll handle any
+	section.section.section-md.bg-default
+		.container.wow.fadeInRight
+			h2.text-color1  We'll handle any
+				br
+				span.font-weight-light intricate custom design
+			.row
+				.col-lg-6
+					p Steel and Fabrication Industry takes great pride in our industry-leading custom metal fabrication services. This is the core of our business and it’s a process we take seriously. We work on small, large, and heavy components. Our team of experts provides over a dozen metal fabrication services. We work with a large variety of metals and raw material forms. Our loyal customers come to us from a diverse array of industries. Their applications and products are numerous, which include sheet metal, complex assemblies, music equipment, fuel tanks, fixtures, and much more.
+				.col-lg-6
+					p Steel and Fabrication Industry offers the most cost-effective, high-quality engineering and design services around. With our consulting, designing, prototyping, and other expert services, we consistently save customers time and money. We also offer a host of additional services, all under the initiative of environmentally-friendly, superior-quality work.
+					a.btn(href='#') read more
+
+	//Bg Vide
+	section.section.bg-vide(data-vide-bg='mp4: video/video, poster: images/parallax1', data-vide-options='posterType: jpg, loop: false, muted: false')
+		.container.section-sm
+			.row
+				.col-lg-6
+					.caption1
+						h2
+							| We serve
+							br
+							| to meet
+						span your fabrication needs
+						p Our team is committed to providing service suited to each customer's ideal turnaround time. Our rush services can be performed in a matter of hours.
+						a.fa.fa-angle-right(href='#')
+
+
+
+
+
+	//OUR PRODUCTS
+	section.section-md.bg-default.wow.fadeInLeft
+		.container
+			h2.title1
+				| Our
+				span.font-weight-light  products
+			.row
+				.col-sm-6.col-lg-4
+					ul.marked-list
+						li
+							a(href='#') Structural Steel Buildings
+						li
+							a(href='#') Platforms, Stairways
+						li
+							a(href='#') Motor & Fan Bases
+						li
+							a(href='#') Tanks
+						li
+							a(href='#') Pressure Vessels
+						li
+							a(href='#') Cyclones
+				.col-sm-6.col-lg-4
+					ul.marked-list
+						li
+							a(href='#') Scrubbers
+						li
+							a(href='#') Fan Housings
+						li
+							a(href='#') Industrial Ductwork & Piping
+						li
+							a(href='#') Hoppers
+						li
+							a(href='#') Stacks
+						li
+							a(href='#') Dampers
+				.col-sm-6.col-lg-4
+					ul.marked-list
+						li
+							a(href='#') Slide Gates
+						li
+							a(href='#') Filter Housings
+						li
+							a(href='#') Conveyors
+						li
+							a(href='#') Guards
+						li
+							a(href='#') Dewatering Screen Cabinets
+						li
+							a(href='#') Sump Tanks
+
+	//Parallax
+	+parallax({
+		img: 'parallax2',
+		innerClass: 'section-sm context-dark text-center'
+	})
+		.container
+				.row
+					.col-lg-6
+						.caption1.caption2
+							h2
+								| We meet
+								br
+								| a wide
+								span range of fabrication requirements
+							p Our industrial coating services are suited to meet the needs of numerous industries.
+							a.fa.fa-angle-right(href='#')
+
+
+	//OFFERING
+	section.section-md.bg-default.wow.fadeInRight
+		.container
+			h2.text-color1
+				| Offering the best level
+				br
+				span.font-weight-light of excellence in steel fabrication
+			.row.row-30
+				.col-md-6
+					img.offs(src='images/page-1_img05.jpg', alt='')
+				.col-md-6
+					p Steel and Fabrication Industry was incorporated in April of 1989 with the objective of offering the market a higher level of excellence in steel fabrication.  Its organizers, with a combined sixty years of experience in steel fabrication, machining, manufacturing, and design could see that many large manufacturers were scaling back their own companies to reduce costs. To achieve their objectives Steel and Fabrication Industry assembled a team of experienced and certified craftsmen, engineers, and designers with a commitment to quality and efficiency.
+					a.btn.offs1(href='#') read more
+
+	include ../sections/_footer-classic

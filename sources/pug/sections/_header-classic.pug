@@ -1,0 +1,63 @@
+header.section.page-header
+	//RD Navbar
+	.rd-navbar-wrap
+		nav.rd-navbar.rd-navbar-classic(
+			data-layout='rd-navbar-fixed'
+			data-sm-layout='rd-navbar-fixed'
+			data-md-layout='rd-navbar-fixed'
+			data-md-device-layout='rd-navbar-fixed'
+			data-lg-layout='rd-navbar-static'
+			data-lg-device-layout='rd-navbar-static'
+			data-xl-layout='rd-navbar-static'
+			data-xl-device-layout='rd-navbar-static'
+			data-lg-stick-up-offset='270px'
+			data-xl-stick-up-offset='46px'
+			data-xxl-stick-up-offset='270px'
+			data-lg-stick-up='true'
+			data-xl-stick-up='true'
+			data-xxl-stick-up='true'
+		)
+			.rd-navbar-collapse-toggle.rd-navbar-fixed-element-1(data-rd-navbar-toggle='.rd-navbar-collapse')
+				span
+			.rd-navbar-aside-outer.rd-navbar-collapse
+				.rd-navbar-aside
+					.rd-navbar-brand
+						// Brand
+						a.brand(href='index.html')
+							img.brand-logo-dark(src='images/logo-default.png' alt='')
+					ul.text-right.contact-list
+						li
+							h5
+								| Need help? Contact us
+						li
+							.unit.unit-spacing-xs.align-items-center.justify-content-end
+								.unit-left
+									span.icon.icon-lg.text-middle.fa-mobile-phone
+								.unit-body
+									h3
+										a(href='tel:#') 800-2345-6789
+						li
+							.unit.unit-spacing-xs.align-items-center.justify-content-end.font-weight-medium
+								.unit-left
+									p.text-color2
+										| Mon-Thu:
+										span.text-gray-400 6am-4pm;
+								.unit-body
+									p.text-color2
+										| Fri:
+										span.text-gray-400 6am-3pm;
+			.rd-navbar-main-outer
+				.rd-navbar-main
+					// RD Navbar Panel
+					.rd-navbar-panel
+						// RD Navbar Toggle
+						button.rd-navbar-toggle(data-rd-navbar-toggle='.rd-navbar-nav-wrap')
+							span
+						// RD Navbar Brand
+						.rd-navbar-brand.d-lg-none
+							// Brand
+							a.brand(href='index.html')
+								img.brand-logo-dark(src='images/logo-default.png' alt='')
+					.rd-navbar-main-element
+						.rd-navbar-nav-wrap
+							+navigation( menu )

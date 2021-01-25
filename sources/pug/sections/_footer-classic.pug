@@ -1,0 +1,30 @@
+footer.footer-classic
+	.bg1.section-sm
+		.container
+			.row.row-40
+				.col-lg-6
+					h2.text-white contacts
+					ul.contact-list
+						li
+							span.title Freephone:
+							a.link-white(href='tel:#')  800-2345-6789
+						li
+							span.title Address:
+							span.caption  4578 Marmora Road,Glasgow D04 89GR
+						li
+							span.title Opening Hours:
+							span.caption  6am-4pm PST M-Th; 6am-3pm PST Fri
+						li
+							span.title E-mail:
+							a.link-blue(href='mailto:#')  info@demolink.org
+				.col-lg-6
+					// map
+					.google-map-container(data-center='9870 St Vincent Place, Glasgow, DC 45 Fr 45.', data-zoom='5', data-icon='images/gmap_marker.png', data-icon-active='images/gmap_marker_active.png', data-styles='[{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":60}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"lightness":30}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ef8c25"},{"lightness":40}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#b6c54c"},{"lightness":40},{"saturation":-40}]},{}]')
+						.google-map
+						ul.google-map-markers
+							li(data-location='9870 St Vincent Place, Glasgow, DC 45 Fr 45.', data-description='9870 St Vincent Place, Glasgow')
+					// END map
+	.footer-aside
+		.container
+			+rights
+

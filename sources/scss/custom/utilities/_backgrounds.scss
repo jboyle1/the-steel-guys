@@ -1,0 +1,94 @@
+/** @section Backgrounds */
+
+.context-dark {
+	@extend %context-dark;
+}
+
+%context-dark {
+	// Logo
+	.brand {
+		.brand-logo-dark {
+			display: none;
+		}
+
+		.brand-logo-light {
+			display: block;
+		}
+	}
+}
+
+%context-light {
+	// Logo
+	.brand {
+		.brand-logo-dark {
+			display: block;
+		}
+
+		.brand-logo-light {
+			display: none;
+		}
+	}
+}
+
+
+// Light Backgrounds
+.bg-default {
+	@include bg-behaviour($body-bg);
+}
+
+.bg-gray-100 {
+	@include bg-behaviour($gray-100);
+}
+
+
+// Dark Backgrounds
+.bg-gray-700 {
+	@extend %context-dark;
+	@include bg-behaviour($gray-700);
+}
+
+
+// Accent Backgrounds
+.bg-primary {
+	@extend %context-dark;
+	@include bg-behaviour($primary);
+}
+
+.bg1{
+	@include bg-behaviour($header-bg);
+}
+
+.bg2 {
+	background: rgba(252, 90, 10, 0.85) none repeat scroll 0 0;
+	padding: 45px 30px;
+	overflow: hidden;
+	.marked-list li {
+		border-bottom: 1px solid #e57941;
+		a {
+			color: $white;
+			&:before {
+				color: $white;
+			}
+			&:hover{
+				background: $color2;
+			}
+		}
+	}
+}
+
+// Background Image
+.bg-image {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+// Desktop only
+html:not(.tablet):not(.mobile) {
+	.bg-fixed {
+		@include media-breakpoint-up(lg) {
+			background-attachment: fixed;
+		}
+	}
+}

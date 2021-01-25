@@ -1,0 +1,172 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'Products & Services'
+
+block page
+	include ../sections/_header-classic
+
+	section.section-md.bg-default
+		.container
+			h2.section-title.text-color1
+				| Service
+				span  Categories
+			.row.row-xl-40
+				.col-lg-6.wow.fadeInLeft
+					h4 Design Engineering Services
+					p Nulla mollis nibh ac lectus bibendum, in aliquet tortor luctus. Morbi ut libero eget sem gravida condimentum. Maecenas semper sagittis purus, in pharetra nibh aliquam eu.
+					ul.marked-list.offset-top-10
+						li
+							a(href='#') Civil and Structural Engineering
+						li
+							a(href='#') Project Design Administration / Management
+				.col-lg-6.wow.fadeInRight
+					h4 Construction Management
+					p Donec faucibus a felis ut porta. Nulla facilisi. Donec diam quam, aliquet in commodo a, aliquam non dolor. Donec et massa accumsan, egestas eros sit amet, massa. Mauris hendrerit ipsum.
+					ul.marked-list.offset-top-10
+						li
+							a(href='#') Construction Management / Inspection
+						li
+							a(href='#') Project Administration / Management
+				.col-lg-6.wow.fadeInLeft
+					h4 Plan Check Services
+					p Morbi posuere diam auctor tellus dictum interdum. Donec faucibus a felis ut porta. Nulla facilisi. Donecdiam quam, aliquet in commodo a, aliquam non dolor. Donec et massa accumsan, egestas eros sit amet.
+					ul.marked-list.offset-top-10
+						li
+							a(href='#') CIP/Development Plan Check Services
+						li
+							a(href='#') Constructability / Peer Review Services
+				.col-lg-6.wow.fadeInRight
+					h4 Public Works Consulting Services
+					p Maecenas semper sagittis purus, in pharetra nibh aliquam eu. Pellentesque habiMorbi posuere diam auctor tellus dictum interdum. Donec faucibus a felis ut porta. donec diam quam, aliquet.
+					ul.marked-list.offset-top-10
+						li
+							a(href='#') Public Agency Management Consulting
+						li
+							a(href='#') Government Relations
+
+	+parallax({
+		img: 'parallax4',
+		innerClass: 'section-sm context-dark '
+	})
+		.container.bg2.context-dark
+			h2.title2
+				span.font-weight-light
+					| Our full suite of services
+					br
+					| includes:
+			.row
+				.col-sm-6
+					ul.marked-list
+						li
+							a(href='#') Public Agency Management
+						li
+							a(href='#') Civil & Structural Engineering Design
+						li
+							a(href='#') Design Project Management
+						li
+							a(href='#') Construction Project Management
+				.col-sm-6
+					ul.marked-list
+						li
+							a(href='#') Construction Inspection Services
+						li
+							a(href='#') Government Relations/Public Assistance
+						li
+							a(href='#') Plan Checking Services
+						li
+							a(href='#') Constructability/Peer Review Services
+
+
+
+
+	section.section-md.bg-default
+		.container
+			h2.section-title
+				| Additional
+				span  services
+			.row
+				.col-sm-6.col-lg-4.wow.fadeInLeft
+					ul.marked-list.offs_none
+						li
+							a(href='#') Feasibility studies
+						li
+							a(href='#') Conceptual Design
+						li
+							a(href='#') FEED
+						li
+							a(href='#') Basic Engineering
+				.col-sm-6.col-lg-4
+					ul.marked-list.offs_none
+						li
+							a(href='#') Detailed Engineering
+						li
+							a(href='#') FPSO Topsides Design
+						li
+							a(href='#') FPSO Motion Analysis
+						li
+							a(href='#') Pre-commissioning
+				.col-sm-6.col-lg-4.wow.fadeInRight
+					ul.marked-list.offs_none
+						li
+							a(href='#') Operation Support
+						li
+							a(href='#') Operators training
+						li
+							a(href='#') Maintenance Manual
+						li
+							a(href='#') Process Optimization
+
+
+
+	+parallax({
+		img: 'parallax4',
+		innerClass: 'section-sm context-dark '
+	})
+		.container.bg2.bg3.context-dark
+			h2.section-title
+				span Products overview
+			.row.row-30
+				.col-sm-6.col-lg-4
+					div
+						h4.title2 Products #1
+						p Morbi posuere diam auctor tellus dictum int erdum. Donec faucibus a felis ut porta.
+						ul.marked-list.offset-top-10
+							li
+								a(href='#') Forming System
+							li
+								a(href='#') Welding Gate
+							li
+								a(href='#') Tandem Welding
+							li
+								a(href='#') Single Wire Welding
+				.col-sm-6.col-lg-4
+					div
+						h4.title2 Products #2
+						p Maecenas semper sagittis purus, in pharetra nibh aliquam eu. Pellentesque habitant.
+						ul.marked-list.offset-top-10
+							li
+								a(href='#') Cement Lining
+							li
+								a(href='#') End Forming Machine
+							li
+								a(href='#') Hydroster
+							li
+								a(href='#') Melter Wrapping Equipment
+				.col-sm-6.col-lg-4
+					div
+						h4.title2 Products #3
+						p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.
+						ul.marked-list.offset-top-10
+							li
+								a(href='#') SRU 1000
+							li
+								a(href='#') SRU 1200
+							li
+								a(href='#') SRU 1400
+							li
+								a(href='#') SRU 1600
+
+
+
+	include ../sections/_footer-classic

@@ -1,0 +1,72 @@
+/** @section Footers */
+
+// Footer Classic
+.footer-classic {
+	.footer-aside {
+		.rights{
+			font-size: 12px;
+			padding-bottom: 17px;
+			padding-top: 23px;
+			color: $default;
+		}
+		a:hover {
+			color: $color1;
+		}
+	}
+	background: $footer-bg;
+	h3, address {
+		color: $content-bg;
+	}
+	.contact-list{
+
+		li{
+			display: flex;
+			flex-wrap: wrap;
+
+			flex-direction: column;
+			align-items: flex-start;
+			@include media-breakpoint-up(sm){
+				flex-direction: row;
+				align-items: center;
+			}
+		}
+		li + li{
+			margin-top: 8px;
+			@include media-breakpoint-up(lg){
+				margin-top: 13px;
+			}
+		}
+		margin-top: 20px;
+		@include media-breakpoint-up(lg){
+			margin-top: 48px;
+		}
+	}
+	address {
+		margin-top: 48px;
+		.mail1 {
+			color: $color5;
+		}
+		dt {
+			float: left;
+			font-size: 17px;
+			text-transform: uppercase;
+			color: $color1;
+		}
+		dd {
+			font-size: 15px;
+			line-height: 17px;
+			margin-bottom: 25px;
+			overflow: hidden;
+			padding-left: 3px;
+		}
+	}
+}
+
+.section-title {
+	@include media-breakpoint-up(xl) {
+		font-size: 55px;
+		span {
+			font-weight: 300;
+		}
+	}
+}

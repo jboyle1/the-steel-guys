@@ -1,0 +1,139 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'About Us'
+
+block page
+	include ../sections/_header-classic
+
+	section.section.section-md.bg-default
+		.container
+			.row.row-30
+				.col-lg-4.wow.fadeInLeft
+					h3.big
+						| about
+						span  us
+					.history-box
+						img(alt='', src='images/page-2_img01.jpg')
+						h4 We have extensive steel construction
+						p Our advanced, automated systems allow us to manufacture faster at a lower cost – and we pass the savings on to our customers. It enables us to improve capacity which provides superior turn around times.
+				.col-lg-4
+					h3.big
+						| our
+						span  history
+					article.history-box
+						time(datetime='2015') 01-02-2015
+						h4 Where we started
+						p Nulla mollis nibh ac lectus bibendum, in aliquet tor mentum. Maecenas semper sagittis purus, in pharetra nibh aliquam eu. Pellentesque habitant .
+					article.history-box
+						time(datetime='2017') 02-03-2017
+						h4 Step by step
+						p Nulla mollis nibh ac lectus bibendum, in aliquet tort mentum. Maecenas semper sagittis purus, in pharetra nibh aliquam eu. Pellentesque habitant .
+					article.history-box
+						time(datetime='2018') 04-05-2018
+						h4 Our development
+						p Nulla mollis nibh ac lectus bibendum, in aliquet tort mentum. Maecenas semper sagittis purus, in pharetra nibh aliquam eu. Pellentesque habitant .
+				.col-lg-4.wow.fadeInRight
+					h3.big
+						| Why
+						span  us
+					article.history-box
+						h4 automated systems
+						p Donec diam quam, aliquet in commodo a, aliquam non dolor. Donec et massa accumsan, egestas eros sit amet egestas massa.
+					ul.marked-list.offs4
+						li
+							a(href='#') Headgear steelwork
+						li
+							a(href='#') Shaft steelwork
+						li
+							a(href='#') Headgear bins
+						li
+							a(href='#') Winder houses
+						li
+							a(href='#') Overland conveyers
+						li
+							a(href='#') Arrangement of chutes
+
+
+
+
+
+	+parallax({
+		img: 'parallax3',
+		innerClass: 'section-sm context-dark '
+	})
+		.container.caption3.context-dark
+			h3.section-title.text-center.text-lg-left
+				span Work team
+			.row.row-30
+				.col-sm-6.col-lg-3
+					.team-box
+						img(alt='', src='images/page-2_img02.jpg')
+						h4 Mark Johnson
+						p Morbi posuere diam auctor tellus dictum interdum. Donec faucib.
+				.col-sm-6.col-lg-3
+					.team-box
+						img(alt='', src='images/page-2_img03.jpg')
+						h4 Patrick Pool
+						p Morbi posuere diam auctor tellus dictum interdum. Donec faucib.
+				.col-sm-6.col-lg-3
+					.team-box
+						img(alt='', src='images/page-2_img04.jpg')
+						h4 Sam Kromstain
+						p Morbi posuere diam auctor tellus dictum interdum. Donec faucib.
+				.col-sm-6.col-lg-3
+					.team-box
+						img(alt='', src='images/page-2_img05.jpg')
+						h4 Alan Smith
+						p Morbi posuere diam auctor tellus dictum interdum. Donec faucib.
+
+
+
+	section.section-md.bg-default
+		.container
+			.row.row-30
+				.col-md-6.col-lg-4.wow.fadeInLeft
+					h2.title-h2
+						| useful
+						span.font-weight-light  info
+					ul.index-list
+						li
+							.index-list_cnt
+								h4 our mission
+								p Donec diam quam, aliquet in commodo a, aliquam non dolor. Donec et massa accumsan.
+						li
+							.index-list_cnt
+								h4 Core Values
+								p Egestas eros sit amet, egestas massa. Mauris hendrerit ipsum sed velit placerat, vitae imperdiet.
+						li
+							.index-list_cnt
+								h4 Certifications
+								p Egestas eros sit amet, egestas massa. Mauris hendrerit ipsum sed velit placerat, vitae imperdiet nisi.
+				.col-md-6.col-lg-4
+					h2.title-h2 CAPABILITIES
+					h4 Social Responsibility
+					p.offset-top-10 Donec diam quam, aliquet in commodo a, aliquam non dolor. Donec et massa accumsan, egestas eros sit amet, egestas massa.
+					ul.marked-list.offset-top-20
+						li
+							a(href='#') Structural Steel Fabrication
+						li
+							a(href='#') Value Added Services
+						li
+							a(href='#') Blasting & Painting
+						li
+							a(href='#') Engineering & Detailing
+						li
+							a(href='#') Structural Steel Erection
+				.col-md-6.col-lg-4.wow.fadeInRight
+					h2.title-h2
+						| clients
+						span.font-weight-light  say
+					.quote-classic
+						q I wanted to say thank you for the amazing product and for the fast processing and delivery. It was impressive, you weren't kidding. I was surprised with such an excellent quality... My family is very happy.
+						h4 Maria Brooks
+					.quote-classic
+						q Suspendisse efficitur hendrerit congue. Aliquam tempor neque arcu, lobortis pretium tempor sit amet nisl vitae, accumsan pharetra nisi. Proin finibus sem vitae elit dignissim placerat. Nunc ut finibus leo.
+						h4 Steven Donovan
+
+
+	include ../sections/_footer-classic

@@ -1,0 +1,28 @@
+/** @section Thumbnails */
+
+// Figure Light
+.figure-light {
+	* + & {
+		margin-top: 30px;
+	}
+
+	figcaption {
+		padding-top: 10px;
+		color: $gray-400;
+	}
+}
+
+.thumbnail-simple {
+	max-width: 370px;
+	margin-right: auto;
+	margin-left: auto;
+	&__caption{
+		padding: 24px 18px 32px 19px;
+		border: 1px solid $color4;
+		position: relative;
+		top: -1px;
+		a:hover {
+			color: $color1;
+		}
+	}
+}
